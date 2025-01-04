@@ -1,14 +1,12 @@
 import Navbar from "../components/global/Navbar.jsx";
 import Footer from "../components/global/Footer.jsx";
+import ContactUs from "../components/contactUs/ContactUs.jsx";
 
 function ContactPage() {
     return (
         <>
             <Navbar />
-            <div className="container my-5">
-                <h1>Contact Us</h1>
-                <p>Placeholder content.</p>
-            </div>
+            <ContactUs />
             <Footer />
         </>
     );
