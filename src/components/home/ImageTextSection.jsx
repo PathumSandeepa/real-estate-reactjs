@@ -8,7 +8,10 @@ function ImageTextSection() {
                 <div className="col-md-6 mb-3">
                     <h2>Why Choose Us?</h2>
                     <p>
-                        Discover your dream property with confidence. We offer a seamless experience, connecting you with the best homes, competitive pricing, and personalized services to make your journey hassle-free.
+                        Discover your dream property with confidence. We offer a
+                        seamless experience, connecting you with the best homes,
+                        competitive pricing, and personalized services to make
+                        your journey hassle-free.
                     </p>
                 </div>
                 <div className="col-md-6">
