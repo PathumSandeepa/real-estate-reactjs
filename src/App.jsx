@@ -5,6 +5,7 @@ import PropertyPage from "./pages/PropertyPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import BlogsPage from "./pages/BlogsPage.jsx";
 import BlogContentPage from "./pages/BlogContentPage.jsx";
+import PropertyContentPage from "./pages/PropertyContentPage.jsx";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/blogs" element={<BlogsPage />} />
             <Route path="/blogs/:id" element={<BlogContentPage />} />
+            <Route path="/property/:id" element={<PropertyContentPage />} />
         </Routes>
     );
 }

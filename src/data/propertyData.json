@@ -7,13 +7,17 @@
         "dateAdded": "2023-12-01",
         "postcode": "BR1",
         "images": [
-            "src/assets/property/1/1.1.jpg",
-            "src/assets/property/1/1.2.jpg"
+            "/src/assets/property/1/1.1.jpg",
+            "/src/assets/property/1/1.2.jpg"
         ],
         "description": "Beautiful 3-bedroom house in a quiet neighborhood.",
-        "longDescription": "Spacious garden, modern kitchen, and close to local amenities.",
-        "floorPlan": "floorplan1.jpg",
-        "location": { "latitude": 51.4074, "longitude": 0.0215 }
+        "longDescription": "This charming house offers a spacious garden perfect for family gatherings or relaxing afternoons. The modern kitchen is equipped with top-of-the-line appliances, making meal preparation a joy. Located close to local amenities, schools, and parks, it is an ideal home for families or professionals seeking a peaceful environment.",
+        "floorPlan": "/src/assets/property/1/floorPlan-1.jpg",
+        "location": {
+            "latitude": 6.8728654,
+            "longitude": 79.8909541,
+            "mapUrl": "https://www.google.com/maps?q=6.8728654,79.8909541"
+        }
     },
     {
         "id": 2,
@@ -23,13 +27,17 @@
         "dateAdded": "2023-11-15",
         "postcode": "NW1",
         "images": [
-            "src/assets/property/2/2.1.jpg",
-            "src/assets/property/2/2.2.jpg"
+            "/src/assets/property/2/2.1.jpg",
+            "/src/assets/property/2/2.2.jpg"
         ],
         "description": "Modern flat in the city center.",
-        "longDescription": "Includes gym access, concierge service, and excellent transport links.",
-        "floorPlan": "floorplan2.jpg",
-        "location": { "latitude": 51.5246, "longitude": -0.134 }
+        "longDescription": "Situated in the heart of the city, this modern flat features sleek interiors and premium finishes. Residents enjoy access to a state-of-the-art gym, concierge services, and excellent transport links that connect you to the best of what the city has to offer. Perfect for young professionals or as an investment property.",
+        "floorPlan": "/src/assets/property/2/floorPlan-02.jpg",
+        "location": {
+            "latitude": 51.5246,
+            "longitude": -0.134,
+            "mapUrl": "https://www.google.com/maps?q=51.5246,-0.134"
+        }
     },
     {
         "id": 3,
@@ -39,13 +47,17 @@
         "dateAdded": "2023-10-05",
         "postcode": "E14",
         "images": [
-            "src/assets/property/3/3.1.jpg",
-            "src/assets/property/3/3.2.jpg"
+            "/src/assets/property/3/3.1.jpg",
+            "/src/assets/property/3/3.2.jpg"
         ],
         "description": "Family-friendly home with a large backyard.",
-        "longDescription": "Features a private driveway, open-plan kitchen, and proximity to schools.",
-        "floorPlan": "floorplan3.jpg",
-        "location": { "latitude": 51.5079, "longitude": -0.0175 }
+        "longDescription": "This delightful four-bedroom house is designed with family living in mind. It boasts a private driveway, an open-plan kitchen with plenty of space for cooking and dining, and a large backyard for outdoor activities. Located near top-rated schools, this property offers both convenience and comfort.",
+        "floorPlan": "/src/assets/property/3/floorPlan-03.jpg",
+        "location": {
+            "latitude": 51.5079,
+            "longitude": -0.0175,
+            "mapUrl": "https://www.google.com/maps?q=51.5079,-0.0175"
+        }
     },
     {
         "id": 4,
@@ -55,13 +67,17 @@
         "dateAdded": "2023-12-10",
         "postcode": "SE1",
         "images": [
-            "src/assets/property/4/4.1.jpg",
-            "src/assets/property/4/4.2.jpg"
+            "/src/assets/property/4/4.1.jpg",
+            "/src/assets/property/4/4.2.jpg"
         ],
         "description": "Cozy studio apartment in South Bank.",
-        "longDescription": "Perfect for professionals, with stunning views and modern amenities.",
-        "floorPlan": "floorplan4.jpg",
-        "location": { "latitude": 51.5045, "longitude": -0.0865 }
+        "longDescription": "A stylish studio apartment that offers stunning views of South Bank. With modern finishes, this property is perfect for professionals seeking an elegant and low-maintenance lifestyle. Its prime location provides easy access to cultural landmarks, restaurants, and public transport.",
+        "floorPlan": "/src/assets/property/4/floorPlan-04.jpg",
+        "location": {
+            "latitude": 51.5045,
+            "longitude": -0.0865,
+            "mapUrl": "https://www.google.com/maps?q=51.5045,-0.0865"
+        }
     },
     {
         "id": 5,
@@ -71,13 +87,17 @@
         "dateAdded": "2023-09-20",
         "postcode": "SW11",
         "images": [
-            "src/assets/property/5/5.1.jpg",
-            "src/assets/property/5/5.2.jpg"
+            "/src/assets/property/5/5.1.jpg",
+            "/src/assets/property/5/5.2.jpg"
         ],
         "description": "Charming 3-bedroom home near Clapham Common.",
-        "longDescription": "Offers a large garden, modern interiors, and a peaceful neighborhood.",
-        "floorPlan": "floorplan5.jpg",
-        "location": { "latitude": 51.4633, "longitude": -0.1657 }
+        "longDescription": "Located in a peaceful neighborhood near Clapham Common, this house features a spacious garden and modern interiors with tasteful decor. Its proximity to local cafes, parks, and schools makes it an excellent choice for families or those looking for a serene retreat in the city.",
+        "floorPlan": "/src/assets/property/5/floorPlan-05.jpg",
+        "location": {
+            "latitude": 51.4633,
+            "longitude": -0.1657,
+            "mapUrl": "https://www.google.com/maps?q=51.4633,-0.1657"
+        }
     },
     {
         "id": 6,
@@ -87,12 +107,16 @@
         "dateAdded": "2024-01-05",
         "postcode": "W8",
         "images": [
-            "src/assets/property/6/6.1.jpg",
-            "src/assets/property/6/6.2.jpg"
+            "/src/assets/property/6/6.1.jpg",
+            "/src/assets/property/6/6.2.jpg"
         ],
         "description": "Luxurious bungalow with a spacious open layout.",
-        "longDescription": "Includes a private garden, modern interiors, and located in a highly sought-after area.",
-        "floorPlan": "floorplan6.jpg",
-        "location": { "latitude": 51.4997, "longitude": -0.1922 }
+        "longDescription": "Nestled in a highly sought-after area, this luxurious bungalow offers unparalleled comfort and style. With its spacious open layout, private garden, and modern interiors, it is the perfect home for those seeking elegance and convenience. Located within walking distance of shopping centers and transport links, this property combines luxury living with practicality.",
+        "floorPlan": "/src/assets/property/6/floorPlan-06.jpg",
+        "location": {
+            "latitude": 51.4997,
+            "longitude": -0.1922,
+            "mapUrl": "https://www.google.com/maps?q=51.4997,-0.1922"
+        }
     }
 ]

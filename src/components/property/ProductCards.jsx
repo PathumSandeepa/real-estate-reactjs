@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { useDrag } from "react-dnd";
+import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import propertyData from "../../data/propertyData.json";
 
 function DraggableCard({ property, onAddToFavorites }) {
+    const navigate = useNavigate();
     const [{ isDragging }, dragRef] = useDrag(() => ({
         type: "PROPERTY",
         item: { property },
@@ -11,10 +13,24 @@ function DraggableCard({ property, onAddToFavorites }) {
             isDragging: !!monitor.isDragging(),
         }),
     }));
+
+    const handleCardClick = (e) => {
+        e.preventDefault();
+        navigate(`/property/${property.id}`);
+    };
+
+    const handleFavoriteClick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        onAddToFavorites(property);
+    };
+
     return (
         <div
             ref={dragRef}
-            style={{ opacity: isDragging ? 0.5 : 1 }}
+            style={{
+                opacity: isDragging ? 0.5 : 1,
+            }}
             className="card h-100"
         >
             <img
@@ -23,7 +39,7 @@ function DraggableCard({ property, onAddToFavorites }) {
                 alt=""
                 style={{ height: "200px", objectFit: "cover" }}
             />
-            <div className="card-body">
+            <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{property.type}</h5>
                 <p className="card-text">
                     <strong>Price:</strong> £{property.price}
@@ -32,12 +48,22 @@ function DraggableCard({ property, onAddToFavorites }) {
                     <br />
                     <strong>Postcode:</strong> {property.postcode}
                 </p>
-                <button
-                    className="btn btn-primary"
-                    onClick={() => onAddToFavorites(property)}
-                >
-                    Favorite
-                </button>
+                <div className="mt-auto">
+                    <div className="d-flex gap-2">
+                        <button
+                            className="btn btn-primary flex-grow-1"
+                            onClick={handleCardClick}
+                        >
+                            View Details
+                        </button>
+                        <button
+                            className="btn btn-outline-primary"
+                            onClick={handleFavoriteClick}
+                        >
+                            Favorite
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     );
