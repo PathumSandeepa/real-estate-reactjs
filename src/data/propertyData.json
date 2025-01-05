@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "type": "House",
+        "price": 450000,
+        "bedrooms": 3,
+        "dateAdded": "2023-12-01",
+        "postcode": "BR1",
+        "images": [
+            "src/assets/property/1/1.1.jpg",
+            "src/assets/property/1/1.2.jpg"
+        ],
+        "description": "Beautiful 3-bedroom house in a quiet neighborhood.",
+        "longDescription": "Spacious garden, modern kitchen, and close to local amenities.",
+        "floorPlan": "floorplan1.jpg",
+        "location": { "latitude": 51.4074, "longitude": 0.0215 }
+    },
+    {
+        "id": 2,
+        "type": "Flat",
+        "price": 300000,
+        "bedrooms": 2,
+        "dateAdded": "2023-11-15",
+        "postcode": "NW1",
+        "images": [
+            "src/assets/property/2/2.1.jpg",
+            "src/assets/property/2/2.2.jpg"
+        ],
+        "description": "Modern flat in the city center.",
+        "longDescription": "Includes gym access, concierge service, and excellent transport links.",
+        "floorPlan": "floorplan2.jpg",
+        "location": { "latitude": 51.5246, "longitude": -0.134 }
+    },
+    {
+        "id": 3,
+        "type": "House",
+        "price": 550000,
+        "bedrooms": 4,
+        "dateAdded": "2023-10-05",
+        "postcode": "E14",
+        "images": [
+            "src/assets/property/3/3.1.jpg",
+            "src/assets/property/3/3.2.jpg"
+        ],
+        "description": "Family-friendly home with a large backyard.",
+        "longDescription": "Features a private driveway, open-plan kitchen, and proximity to schools.",
+        "floorPlan": "floorplan3.jpg",
+        "location": { "latitude": 51.5079, "longitude": -0.0175 }
+    },
+    {
+        "id": 4,
+        "type": "Flat",
+        "price": 250000,
+        "bedrooms": 1,
+        "dateAdded": "2023-12-10",
+        "postcode": "SE1",
+        "images": [
+            "src/assets/property/4/4.1.jpg",
+            "src/assets/property/4/4.2.jpg"
+        ],
+        "description": "Cozy studio apartment in South Bank.",
+        "longDescription": "Perfect for professionals, with stunning views and modern amenities.",
+        "floorPlan": "floorplan4.jpg",
+        "location": { "latitude": 51.5045, "longitude": -0.0865 }
+    },
+    {
+        "id": 5,
+        "type": "House",
+        "price": 400000,
+        "bedrooms": 3,
+        "dateAdded": "2023-09-20",
+        "postcode": "SW11",
+        "images": [
+            "src/assets/property/5/5.1.jpg",
+            "src/assets/property/5/5.2.jpg"
+        ],
+        "description": "Charming 3-bedroom home near Clapham Common.",
+        "longDescription": "Offers a large garden, modern interiors, and a peaceful neighborhood.",
+        "floorPlan": "floorplan5.jpg",
+        "location": { "latitude": 51.4633, "longitude": -0.1657 }
+    },
+    {
+        "id": 6,
+        "type": "Bungalow",
+        "price": 600000,
+        "bedrooms": 4,
+        "dateAdded": "2024-01-05",
+        "postcode": "W8",
+        "images": [
+            "src/assets/property/6/6.1.jpg",
+            "src/assets/property/6/6.2.jpg"
+        ],
+        "description": "Luxurious bungalow with a spacious open layout.",
+        "longDescription": "Includes a private garden, modern interiors, and located in a highly sought-after area.",
+        "floorPlan": "floorplan6.jpg",
+        "location": { "latitude": 51.4997, "longitude": -0.1922 }
+    }
+]
