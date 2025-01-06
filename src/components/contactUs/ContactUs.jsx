@@ -154,7 +154,7 @@ function ContactUs() {
 
                 {/* Image Section */}
                 <div
-                    className="col-lg-6 p-0 d-flex align-items-center justify-content-center"
+                    className="col-lg-6 p-0 d-none d-lg-flex align-items-center justify-content-center"
                     style={{ height: "80vh" }}
                 >
                     <img

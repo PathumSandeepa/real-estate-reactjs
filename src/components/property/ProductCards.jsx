@@ -57,12 +57,13 @@ function DraggableCard({ property, onAddToFavorites }) {
                             View Details
                         </button>
                         <button
-                            className="btn btn-outline-primary"
+                            className="btn"
                             onClick={handleFavoriteClick}
+                            style={{ color: "#F93827", borderColor: "#F93827" }}
                         >
                             Favorite
                         </button>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
