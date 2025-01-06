@@ -8,15 +8,9 @@ const PropertyContent = () => {
     const { id } = useParams();
     const [activeTab, setActiveTab] = useState("description");
     const property = propertyData.find((prop) => prop.id === parseInt(id));
-
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     if (!property) return <div>Property not found</div>;
-
-    const center = {
-        lat: parseFloat(property.location.lat),
-        lng: parseFloat(property.location.lng),
-    };
 
     return (
         <div
@@ -36,11 +30,8 @@ const PropertyContent = () => {
                 </button>
 
                 <div className="row">
-                    {/* Left Section - 8 columns on desktop */}
                     <div className="col-12 col-lg-8">
-                        {/* Image Carousel */}
                         <div className="mb-4">
-                            {/* Main Carousel */}
                             <div
                                 id="propertyCarousel"
                                 className="carousel slide mb-2"
@@ -102,31 +93,30 @@ const PropertyContent = () => {
                             </div>
 
                             {/* Thumbnails */}
-                            <div className="d-flex gap-2 justify-content-center">
-                                {property.images
-                                    .slice(0, 2)
-                                    .map((image, index) => (
-                                        <img
-                                            key={index}
-                                            src={image}
-                                            alt={`Thumbnail ${index + 1}`}
-                                            className={`cursor-pointer ${
-                                                currentImageIndex === index
-                                                    ? "border border-primary"
-                                                    : ""
-                                            }`}
-                                            style={{
-                                                width: "100px",
-                                                height: "70px",
-                                                objectFit: "cover",
-                                                cursor: "pointer",
-                                                borderRadius: "4px",
-                                            }}
-                                            onClick={() =>
-                                                setCurrentImageIndex(index)
-                                            }
-                                        />
-                                    ))}
+                            <div className="d-flex gap-2 justify-content-center flex-wrap">
+                                {property.images.map((image, index) => (
+                                    <img
+                                        key={index}
+                                        src={image}
+                                        alt={`Thumbnail ${index + 1}`}
+                                        className={`cursor-pointer ${
+                                            currentImageIndex === index
+                                                ? "border border-primary"
+                                                : ""
+                                        }`}
+                                        style={{
+                                            width: "80px",
+                                            height: "60px",
+                                            objectFit: "cover",
+                                            cursor: "pointer",
+                                            borderRadius: "4px",
+                                            margin: "2px",
+                                        }}
+                                        onClick={() =>
+                                            setCurrentImageIndex(index)
+                                        }
+                                    />
+                                ))}
                             </div>
                         </div>
 
@@ -170,11 +160,13 @@ const PropertyContent = () => {
 
                         {/* Tab Content */}
                         <div className="tab-content">
+                            {/* Discription  */}
                             {activeTab === "description" && (
                                 <div className="tab-pane fade show active">
                                     <p>{property.longDescription}</p>
                                 </div>
                             )}
+                            {/* Floorplan  */}
                             {activeTab === "floorplan" && (
                                 <div className="tab-pane fade show active">
                                     <img
@@ -184,20 +176,50 @@ const PropertyContent = () => {
                                     />
                                 </div>
                             )}
+                            {/* Location  */}
                             {activeTab === "location" && (
                                 <div className="tab-pane fade show active">
-                                    <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
+                                    <LoadScript googleMapsApiKey="AIzaSyAGwxdsoc6fOtS0pBV_FV8g45wRxukJt9Q">
                                         <GoogleMap
                                             mapContainerStyle={{
                                                 width: "100%",
                                                 height: "400px",
                                             }}
-                                            center={center}
+                                            center={{
+                                                lat: parseFloat(
+                                                    property.location.latitude
+                                                ),
+                                                lng: parseFloat(
+                                                    property.location.longitude
+                                                ),
+                                            }}
                                             zoom={15}
                                         >
-                                            <Marker position={center} />
+                                            <Marker
+                                                position={{
+                                                    lat: parseFloat(
+                                                        property.location
+                                                            .latitude
+                                                    ),
+                                                    lng: parseFloat(
+                                                        property.location
+                                                            .longitude
+                                                    ),
+                                                }}
+                                            />
                                         </GoogleMap>
                                     </LoadScript>
+                                    <div className="mt-3">
+                                        <a
+                                            href={property.location.mapUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="btn btn-primary"
+                                        >
+                                            <i className="bi bi-geo-alt me-2"></i>
+                                            View on Google Maps
+                                        </a>
+                                    </div>
                                 </div>
                             )}
                         </div>
