@@ -51,3 +51,4 @@ This project does not currently include a license. Please contact the author for
 ---
 
 Feel free to contribute or provide feedback to improve this application!
+Happy Coding :)
